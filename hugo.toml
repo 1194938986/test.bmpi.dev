@@ -2,3 +2,10 @@ baseURL = "https://jolly-cassata-a30597.netlify.app/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "hugo-coder"
+
+[outputs]
+  page     = ["HTML", "AMP"]
+  home     = ["HTML", "RSS"]
+  section  = ["HTML"]
+  taxonomyTerm = ["HTML"]
+  taxonomy = ["HTML"]
