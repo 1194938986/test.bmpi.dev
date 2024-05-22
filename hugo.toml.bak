@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "hugo-coder"
 
+[build]
+publish = "public" #发布目录，即构建后的文件将被放置在此目录
+
 [outputs]
   page     = ["HTML", "AMP"]
   home     = ["HTML", "RSS"]

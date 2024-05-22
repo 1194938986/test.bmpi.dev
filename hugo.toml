@@ -4,7 +4,7 @@ title = "My New Hugo Site"
 theme = "hugo-coder"
 
 [build]
-  publish = "public" # 发布目录，即构建后的文件将被放置在此目录
+publish = "public" 
 
 [outputs]
   page     = ["HTML", "AMP"]
