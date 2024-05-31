@@ -1,14 +1,71 @@
 baseURL = "https://jolly-cassata-a30597.netlify.app/"
-languageCode = "en-us"
+languageCode = "en-US"
 title = "My New Hugo Site"
 theme = "hugo-coder"
+defaultcontentlanguage = "en"
 
-[build]
-publish = "public" #发布目录，即构建后的文件将被放置在此目录
+paginate = 20
 
-[outputs]
-  page     = ["HTML", "AMP"]
-  home     = ["HTML", "RSS"]
-  section  = ["HTML"]
-  taxonomyTerm = ["HTML"]
-  taxonomy = ["HTML"]
+[services]
+[services.disqus]
+disqusShortname = "yourdiscussshortname"
+
+[markup.highlight]
+style = "monokai"
+
+[params]
+  author = "John Doe"
+  info = "Full Stack DevOps and Magician"
+  description = "John Doe's personal website"
+  keywords = "blog,developer,personal"
+  avatarurl = "images/avatar.jpg"
+  #gravatar = "john.doe@example.com"
+  commentoURL = "https://cdn.commento.io"
+
+  faviconSVG = "/img/favicon.svg"
+  favicon_32 = "/img/favicon-32x32.png"
+  favicon_16 = "/img/favicon-16x16.png"
+
+  since = 2019
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+  # customCSS = ["css/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/johndoe/"
+[[params.social]]
+  name = "Gitlab"
+  icon = "fa-brands fa-gitlab fa-2x"
+  weight = 2
+  url = "https://gitlab.com/johndoe/"
+[[params.social]]
+  name = "Twitter"
+  icon = "fa-brands fa-x-twitter fa-2x"
+  weight = 3
+  url = "https://twitter.com/johndoe/"
+
+# Menu links
+[[menu.main]]
+  name = "Blog"
+  weight = 1
+  url  = "Build 1 new blog from 0/"
+[[menu.main]]
+  name = "About"
+  weight = 2
+  url = "about/"
