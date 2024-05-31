@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>http://localhost:1313/</link>
+    <link>https://jolly-cassata-a30597.netlify.app/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jolly-cassata-a30597.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/build-1-new-blog-from-0/</link>
+      <link>https://jolly-cassata-a30597.netlify.app/%E4%BB%8E0%E6%90%AD%E5%BB%BA1%E4%B8%AA%E6%96%B0%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/build-1-new-blog-from-0/</guid>
+      <guid>https://jolly-cassata-a30597.netlify.app/%E4%BB%8E0%E6%90%AD%E5%BB%BA1%E4%B8%AA%E6%96%B0%E5%8D%9A%E5%AE%A2/</guid>
       <description>四维提升 Objectives Key Results 身体提升 拥有一个健康的身体 {{embed [[2021-OKR-O2-KRs]]}} 能力提升 提升技术到价值的转化效率 {{embed [[2021-OKR-O3-KRs]]}} 收入提升 家庭财务状况健康 {{embed [[2021-OKR-O4-KRs]]}} 影响力提升 在技术和投资领域建立专业影响力 上次用hexo + github + 一个域名网站搭建个人博客还是在2020年&#xA;这一次在用Hugo搭建，github托管，netlify部署&#xA;上一次在Win10，这一次在Win11&#xA;全流程参考：https://www.bmpi.dev/dev/guide-to-setup-blog-site-with-zero-cost/1/&#xA;用Powershell安装Scoop&#xD;Link to heading&#xD;为了使用Scoop先安装了一个Poweshell最新版本，因为需要比较高版本的Powershell&#xA;在 Windows 上安装 PowerShell&#xA;用Scoop安装Hugo&#xD;Link to heading&#xD;Window上的一个命令行下载工具，纯净版。第一次安装&#xA;用于Windows的命令行安装程序&#xA;Hugo搭建&#xD;Link to heading&#xD;安装Hugo遇到的最大麻烦：Warning “you need the extended version to build SCSS/SASS“ not triggered when it should 的解决办法&#xA;解决方案是用Scoop安装hugo的时候，安装扩展版&#xA;Github托管&#xD;Link to heading&#xD;这个没遇到啥困难&#xA;netlify部署&#xD;Link to heading&#xD;参考文章1：https://app.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://jolly-cassata-a30597.netlify.app/%E5%BC%80%E5%8F%91%E8%AE%A2%E9%98%85%E6%B6%88%E6%81%AF/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jolly-cassata-a30597.netlify.app/%E5%BC%80%E5%8F%91%E8%AE%A2%E9%98%85%E6%B6%88%E6%81%AF/</guid>
+      <description>开发订阅消息&#xD;Link to heading&#xD;内容：对小程序“Mimi”开发订阅消息，包括开始配送通知和送达通知&#xA;创建时间：2024-05-31&#xA;修改时间：2024-05-31&#xA;1、先看云函数&#xD;Link to heading&#xD;新建一个叫作yl-6-Template-message的云函数&#xA;// 云函数入口文件 const cloud = require(&amp;#39;wx-server-sdk&amp;#39;) cloud.init({ env: cloud.DYNAMIC_CURRENT_ENV }) // 使用当前云环境 //送达订阅消息模板，传入参数分别为订单orderid、需要发送订阅消息的用户的openid、楼栋loudong、宿舍号addressnum async function sendtouserdone(orderid,openid,loudong,addressnum) { try { const result = await cloud.openapi.subscribeMessage.send({ touser: openid, // 接受当前模板消息的用户openid // touser: wxContext.OPENID, templateId: &amp;#39;模板ID&amp;#39;, // 当前下发的模板ID，不可写多个，目前只支持一个 page: &amp;#39;/pages/perfect3/perfect3?orderid=&amp;#39; + orderid, // 定义用户点击该模板消息跳转的小程序路径 data: { phrase1: { value: &amp;#39;已送达&amp;#39; }, thing12: { value: loudong + addressnum }, thing11: { value: &amp;#39;如门口无餐请联系客服微信XYSKF5&amp;#39; } } }) return result } catch (err) { return err } } //开始配送订阅消息模板，传入参数分别为订单orderid、需要发送订阅消息的用户的openid、楼栋loudong、宿舍号addressnum async function sendtouserdoing(orderid,openid,loudong,addressnum) { try { const result = await cloud.</description>
     </item>
   </channel>
 </rss>

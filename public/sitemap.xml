@@ -2,16 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/build-1-new-blog-from-0/</loc>
+    <loc>https://jolly-cassata-a30597.netlify.app/%E4%BB%8E0%E6%90%AD%E5%BB%BA1%E4%B8%AA%E6%96%B0%E5%8D%9A%E5%AE%A2/</loc>
   </url><url>
-    <loc>http://localhost:1313/authors/</loc>
+    <loc>https://jolly-cassata-a30597.netlify.app/%E5%BC%80%E5%8F%91%E8%AE%A2%E9%98%85%E6%B6%88%E6%81%AF/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://jolly-cassata-a30597.netlify.app/authors/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://jolly-cassata-a30597.netlify.app/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>https://jolly-cassata-a30597.netlify.app/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://jolly-cassata-a30597.netlify.app/series/</loc>
+  </url><url>
+    <loc>https://jolly-cassata-a30597.netlify.app/tags/</loc>
   </url>
 </urlset>
