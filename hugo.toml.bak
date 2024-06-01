@@ -64,7 +64,7 @@ style = "monokai"
 [[menu.main]]
   name = "Blog"
   weight = 1
-  url  = "Build 1 new blog from 0/"
+  url  = "build-1-new-blog-from-0/"
 [[menu.main]]
   name = "About"
   weight = 2
